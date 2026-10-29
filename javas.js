@@ -19,16 +19,16 @@
 function getComputerChoice() {
     const stringNumber = Math.floor((Math.random())*100)
 
-    // console.log(stringNumber) # to use the number 
+    console.log(stringNumber) 
 
     if (stringNumber <= 33) {
-        // console.log("rock");
+        console.log("rock");
         return "rock";  
     } else if (stringNumber <=66) {
-        // console.log("paper");
+        console.log("paper");
         return "paper";
     } else {
-        // console.log("scissors");
+        console.log("scissors");
         return "scissors";
     }
 }
@@ -48,7 +48,7 @@ function getComputerChoice() {
 
 function getHumanChoice () {
     const input = prompt("enter your decision", "rock, paper or scissors");
-    // console.log(input)
+    console.log(input)
 }
 
 // getHumanChoice()
@@ -63,4 +63,21 @@ const humanScore =0;
 const computerScore =0; 
 
 // step 4: write the logic to play a single round.
+
+// 1) create a function named playRound. 
+
+function playRound( humanChoice, computerChoice) {
+    if (getHumanChoice === "rock" && getComputerChoice === "scissors") {
+        console.log( "you win! rock beat scissors")
+    } else if (getHumanChoice === "rock" && getComputerChoice ==="paper") {
+        console.log("you lose!. paper beats rock")
+    } else {
+        console.log("it's a tie!")
+    }
+}
+
+// const humanSelection = getHumanChoice(); 
+// const computerSelection = getComputerChoice();
+
+playRound(getHumanChoice, getComputerChoice); 
 
