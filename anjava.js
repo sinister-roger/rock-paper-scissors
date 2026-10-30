@@ -1,5 +1,5 @@
 
-
+// step 2: //
 // function getComputerChoice() {
 //     const values = (Math.floor(Math.random()*100));
 //     // console.log(values)
@@ -28,4 +28,13 @@ function getComputerChoice1() {
 }
 
 getComputerChoice1()
+
+// step 3 //; 
+
+function getHumanChoice() {
+    const humanInput = prompt("choose among rock, paper, and scissors");
+    return humanInput 
+}
+
+getHumanChoice()
 
