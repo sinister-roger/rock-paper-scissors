@@ -38,3 +38,8 @@ function getHumanChoice() {
 
 getHumanChoice()
 
+// step 4 //;
+
+const humanScore = 0; 
+const computerScore = 0; 
+
